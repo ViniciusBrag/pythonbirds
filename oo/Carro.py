@@ -46,7 +46,7 @@ Exemplo:
     >>> direcao.valor
     'Norte'
     >>> direcao.girar_a_direita()
-    >>> direcao.valor
+    >>>direcao.valor
     'Leste'
     >>> direcao.girar_a_direita()
     >>> direcao.valor
@@ -102,14 +102,15 @@ class Carro:
     def calcular_velocidade(self):
         return self.motor.velocidade
 
-    def calcular_direcao(self):
-        return self.direcao.valor
 
     def acelerar(self):
         return self.motor.acelerar()
 
     def frear(self):
         return self.motor.frear()
+
+    def calcular_direcao(self):
+        return self.direcao.valor
 
     def girar_a_direita(self):
        return self.direcao.girar_a_direita()
